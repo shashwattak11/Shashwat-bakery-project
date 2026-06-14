@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Owen Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Light mix of pink (#ffe0f0), pista green (#e0ffe0), and beige (#f5e0c3) */
+            background: linear-gradient(to bottom right, #ffe0f0, #e0ffe0, #f5e0c3);
+            color: #333;
+        }
+
+        header {
+            background: #f5e0c3; /* Beige color for the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #6f4f37; /* Chocolaty brown color */
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.3em;
+            color: #4caf50;
+        }
+
+        nav {
+            background-color: #f5e0c3;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e91e63;
+            color: white;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #444;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-box {
+            flex: 0 0 auto;
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            scroll-snap-align: start;
+            padding: 10px;
+        }
+
+        .product-box img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #6f4f37; /* Chocolaty brown */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        #reviews {
+            background-color: #fff; /* Optional: Add a background to the section */
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd; /* Light grey border */
+            border-radius: 8px;
+            text-align: left; /* Align reviews to the left for better readability */
+        }
+
+        #reviews p {
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        #reviews p:last-child {
+            margin-bottom: 0;
+        }
+
+        #contact {
+            background-color: #fff; /* Optional: Add a background to the section */
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd; /* Light grey border */
+            border-radius: 8px;
+            text-align: left; /* Align contact info to the left */
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #e91e63; /* Pink accent color for links */
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        #bakery-images {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9; /* Light grey background for the section */
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        #bakery-images h2 {
+            color: #6f4f37; /* Chocolaty brown */
+            margin-bottom: 15px;
+        }
+
+        .bakery-image-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+            padding: 10px 0;
+        }
+
+        .bakery-image-container img {
+            width: 200px; /* Adjust as needed */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TOP IN TOWN BAKERY</h1>
+        <p>Food of The Gods, Freshly Baked!</p>
+    </header>
+
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#address">Address</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="products">
+        <h2>Our Delicious Products</h2>
+        <div class="carousel">
+            <div class="product-box">
+                <img src="https://theobroma.in/cdn/shop/files/DutchTruffleCakehalfkg02.jpg?v=1711125138" alt="Chocolate Dutch Cake">
+                <p><strong>Chocolate Dutch Cake & Pastry</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://theobroma.in/cdn/shop/files/ChocolatemousseCake4Large.jpg?v=1702989535" alt="Mousse Cake">
+                <p><strong>Mousse Cake & Pastry</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://theobroma.in/cdn/shop/files/EgglessFreshCreamPineapplePastry02.jpg?v=1711099076" alt="Pineapple Cake">
+                <p><strong>Pineapple Cake & Pastry</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://ribbonsandballoons.com/assets1/uploads/FERRERO-ROCHER-CAKE_779466.jpg" alt="Ferrero Rocher Cake">
+                <p><strong>Ferrero Rocher Cake & Pastry</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://bkmedia.bakingo.com/jungle-jamboree-cake-them4024flav-a.jpg?tr=h-320,w-320?text=Customized+Cakes" alt="Customized Cakes">
+                <p><strong>Customized Cakes</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://theobroma.in/cdn/shop/files/MultigrainLoaf.jpg?v=1710837581" alt="Bread">
+                <p><strong>Bread</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://www.loveandotherspices.com/wp-content/uploads/2024/12/meat-buns-featured.jpg" alt="Buns">
+                <p><strong>Buns</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://defencebakery.in/cdn/shop/files/Patties_vegetable_714cbc6f-37b6-4c94-919d-70936d7de2f3.jpg?v=1729155605" alt="Patties">
+                <p><strong>Patties</strong></p>
+            </div>
+            <div class="product-box">
+                <img src="https://www.mirchitales.com/wp-content/uploads/2021/08/How-to-make-Cake-Rusk-3.jpg" alt="Rusk">
+                <p><strong>Rusk</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="address">
+        <h2>Visit Us</h2>
+        <p>Sai Gaurav 1, Shop No. 2 & 3, Sai Gaurav Bldg, Sai Chowk, near Saibaba Mandir, Khadakpada, Kalyan, Maharashtra 421301</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.084613887838!2d73.13652957428168!3d19.2369489820338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795242a41918d%3A0x942308b5527929dd!2sSai%20Gaurav%201!5e0!3m2!1sen!2sin!4v1714428718897!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="bakery-images">
+        <h2>Our Bakery</h2>
+        <div class="bakery-image-container">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOQCYAtTM7noij7efMNfdfmgemzWULZ4lvmTB4k=s680-w680-h510-rw" alt="Bakery Front">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB9vcn6V_lK0t2_dIhRz0b7EzLEH-OQ_S8ZpZZAiYW_RrqU3rhNR0cJ54rwBYnklchup8uQ9aclbGdPuWYPIl0Upghk0dATE9Qc3gXgHKkUzMtauZ2EPGFY5vtxv9GKVZ-faKGo=s680-w680-h510-rw" alt="Inside View 1">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nol0POy40PKGZQf68IPqvTseQN1hU234RGCvHgFf9Bjgv0oLBY99aaq7_Vl-suEES5OJz5Xkrs-FNMI9R6kvmfJeb3uTXKoBi3adZT4Qx_VRE0JCiB1JMO3PZQZxHQqQI7sDIwgug=s680-w680-h510-rw" alt="Inside View 2">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB_IkkeUBz3oN6DDPNIrIEIsFI2rP6oOeiPA6kIxC9cL1Ohfdx1ul5tbHZlEKBAhZnfby9suKTlMB9lY4Xb4XJLuzR3QQ46f5hRxjQCjR-0BU5zCrxep5ixkrB7cyD24CGzpTzg=s680-w680-h510-rw" alt="Display Counter">
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <p>"Absolutely delicious! The chocolate Dutch cake is a must-try!" - Priya K.</p>
+        <p>"Best bakery in Kalyan! Fresh and tasty every time." - Rajesh M.</p>
+        <p>"Love the customized cakes for special occasions." - Anita S.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 9075058899</p>
+    </section>
+
+    <footer>
+        <p>© 2025 TOP IN TOWN BAKERY | All rights reserved.</p>
+    </footer>
+</body>
+</html>
